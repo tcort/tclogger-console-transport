@@ -1,0 +1,25 @@
+{
+  "name": "tclogger-console-transport",
+  "version": "0.0.0",
+  "description": "console transport for tclogger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//tcort/tclogger-console-transport"
+  },
+  "keywords": [
+    "logging",
+    "logger",
+    "tclogger",
+    "transport"
+  ],
+  "author": "Thomas Cort <linuxgeek@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "moment": "^2.18.1"
+  }
+}
