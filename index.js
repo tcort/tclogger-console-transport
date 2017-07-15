@@ -18,8 +18,8 @@ const levelColors = {
 };
 
 module.exports = function consoleTransport() {
-    return function (level, message) {
-        const color = levelColors.hasOwnProperty(level) ? levelColors[level] : 'cyan';
-        return chalk[color](`[${moment().format()}] [${level}] ${message}`);
+    return function (log) {
+        const color = levelColors.hasOwnProperty(log.level) ? levelColors[log.level] : 'cyan';
+        console.log(chalk[color](`[${moment().format()}] [${log.level}] ${log.message}`));
     };
 };
